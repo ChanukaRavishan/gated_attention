@@ -1,0 +1,123 @@
+{
+ "run": "full",
+ "budget": {
+  "n_train_stories": 125000,
+  "n_tokenizer_stories": 50000,
+  "n_val": 1500,
+  "n_calib": 1500,
+  "n_eval": 4000,
+  "n_boundary_pairs": 2000,
+  "n_name_pairs": null,
+  "n_name_b_per_combo": 1
+ },
+ "vocab_size": 4096,
+ "block_size": 256,
+ "eval_stride": 128,
+ "b_scored": 32,
+ "eos_id": 0,
+ "pad_id": 1,
+ "data_seed": 1234,
+ "duplicates": {
+  "train_empty": 11,
+  "train_within_dup": 1036,
+  "heldout_empty": 0,
+  "heldout_within_dup": 0,
+  "heldout_in_official_train": 6601
+ },
+ "n_train_tokens": 28331034,
+ "n_train_blocks": 110668,
+ "split_counts": [
+  {
+   "split": "calib",
+   "stories": 1500,
+   "tokens": 321568,
+   "median_tokens": 193.0,
+   "max_tokens": 986
+  },
+  {
+   "split": "eval",
+   "stories": 4000,
+   "tokens": 839199,
+   "median_tokens": 189.0,
+   "max_tokens": 1058
+  },
+  {
+   "split": "train",
+   "stories": 123963,
+   "tokens": 28207071,
+   "median_tokens": 196.0,
+   "max_tokens": 1170
+  },
+  {
+   "split": "val",
+   "stories": 1500,
+   "tokens": 322602,
+   "median_tokens": 192.0,
+   "max_tokens": 903
+  }
+ ],
+ "word_categories": [
+  {
+   "category": "first",
+   "n": 331458,
+   "stories": 4000,
+   "multi_token": 21887,
+   "prev_not_visible": 0
+  },
+  {
+   "category": "repeat 1-10",
+   "n": 90697,
+   "stories": 4000,
+   "multi_token": 2612,
+   "prev_not_visible": 0
+  },
+  {
+   "category": "repeat 11-50",
+   "n": 172677,
+   "stories": 3999,
+   "multi_token": 8790,
+   "prev_not_visible": 0
+  },
+  {
+   "category": "repeat 51+",
+   "n": 55850,
+   "stories": 3966,
+   "multi_token": 2264,
+   "prev_not_visible": 4253
+  }
+ ],
+ "dist_bins": [
+  0,
+  10,
+  50,
+  "inf"
+ ],
+ "dist_labels": [
+  "repeat 1-10",
+  "repeat 11-50",
+  "repeat 51+"
+ ],
+ "n_boundary_pairs": 2000,
+ "n_name_prompts": 2348,
+ "names": [
+  "Lily",
+  "Emma",
+  "Mia",
+  "Anna",
+  "Lucy",
+  "Sue",
+  "Amy",
+  "Sara",
+  "Tom",
+  "Ben",
+  "Tim",
+  "Sam",
+  "Max",
+  "Jack",
+  "Bob",
+  "Joe",
+  "Mark"
+ ],
+ "word_regex": "[A-Za-z]+(?:['\u2019][A-Za-z]+)*",
+ "normalization": "lowercase, \u2019->', strip final 's"
+}
