@@ -1,0 +1,4 @@
+variant,total_params,variant_only_params,overhead_%
+baseline,4273664,0,0.0
+g1,4281888,8224,0.19206480879462517
+sink,4273696,32,0.0007487664073439009
